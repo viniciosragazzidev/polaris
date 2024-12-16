@@ -6,7 +6,13 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { BriefcaseIcon, NotepadText, ShoppingBag, Wrench } from "lucide-react";
+import {
+  BriefcaseIcon,
+  Calendar,
+  ListTodo,
+  NotepadText,
+  NotepadTextDashed,
+} from "lucide-react";
 import Link from "next/link";
 
 interface InitialCardsNavProps {
@@ -54,16 +60,22 @@ export default function InitialItemsCards() {
         description="Suas OS's"
       />
       <InitialCardsNav
-        title="Meus Produtos"
+        title="Recibos"
         href=""
-        icon={<Wrench className="h-5 w-5 text-primary" />}
-        description="Lorem ipsum dolor sit amet consectetur, adipisicing elit."
+        icon={<NotepadTextDashed className="h-5 w-5 text-primary" />}
+        description="Recibos gerados pelo sistema."
       />
       <InitialCardsNav
-        title="Minhas Vendas"
+        title="Agenda"
         href=""
-        icon={<ShoppingBag className="h-5 w-5 text-primary" />}
-        description="Lorem ipsum dolor sit amet consectetur, adipisicing elit."
+        icon={<Calendar className="h-5 w-5 text-primary" />}
+        description="Seus eventos e compromissos"
+      />
+      <InitialCardsNav
+        title="Tarefas"
+        href=""
+        icon={<ListTodo className="h-5 w-5 text-primary" />}
+        description="Lista de tarefas"
       />
     </div>
   );
