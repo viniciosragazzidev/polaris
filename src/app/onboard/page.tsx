@@ -8,7 +8,7 @@ const Onboard = () => {
   const router = useRouter();
   return (
     <main className="flex h-screen flex-col items-center justify-center  bg-slate-100">
-      <div className="flex justify-between py-4 bg-background w-full px-3">
+      <div className="flex justify-between py-4 bg-background w-full px-3 items-center">
         <ChevronLeft className="cursor-pointer w-5" />
         <span className="">Onboard</span>
         <LogOut className="cursor-pointer w-5" />

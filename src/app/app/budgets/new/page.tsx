@@ -1,8 +1,8 @@
 "use client";
-import { ArrowLeft, Bell } from "lucide-react";
-import ClientsArea from "./clients-area";
+import { ArrowLeft } from "lucide-react";
+import FormNewBudget from "./form-new-budget";
 
-export default function Clientes() {
+const NewBudget = () => {
   return (
     <>
       <div className="flex justify-between py-4 bg-background w-full px-3 items-center">
@@ -13,9 +13,15 @@ export default function Clientes() {
           <ArrowLeft className="cursor-pointer w-5 text-primary " />
         </span>
 
-        <Bell className="cursor-pointer w-5 text-primary" />
+        <span className="text-primary text-sm">Novo Orçamento</span>
+        <span></span>
       </div>
-      <ClientsArea />
+
+      <div className="">
+        <FormNewBudget />
+      </div>
     </>
   );
-}
+};
+
+export default NewBudget;

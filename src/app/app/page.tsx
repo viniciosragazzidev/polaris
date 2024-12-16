@@ -9,7 +9,7 @@ import InitialItemsCards from "./components/initial-items-cards";
 const App = () => {
   return (
     <>
-      <div className="flex justify-between py-4 bg-background w-full px-3">
+      <div className="flex justify-between py-4 bg-background w-full px-3 items-center">
         <AlignLeft className="cursor-pointer w-6 text-primary" />
 
         <Sparkle className="cursor-pointer w-6 text-primary" />

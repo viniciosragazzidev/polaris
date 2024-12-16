@@ -3,11 +3,12 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ArrowLeft, Bell, Search, TriangleAlert } from "lucide-react";
+import Link from "next/link";
 
 const Orcamentos = () => {
   return (
     <>
-      <div className="flex justify-between py-4 bg-background w-full px-3">
+      <div className="flex justify-between py-4 bg-background w-full px-3 items-center">
         <span
           onClick={() => window.history.back()}
           className="bg-primary/10 p-1 px-2 rounded-md"
@@ -29,9 +30,12 @@ const Orcamentos = () => {
             />
             <Search className="absolute right-3 text-primary  w-5" />
           </div>
-          <Button variant="outline" className="text-sm py-5">
-            Adicionar novo Serviço
-          </Button>
+          <Link href="/app/budgets/new" className="w-full">
+            {" "}
+            <Button variant="outline" className="text-sm py-5 w-full">
+              Adicionar novo Orçamento
+            </Button>
+          </Link>
           <Tabs defaultValue="pending" className="w-full max-w-md">
             <TabsList className="flex justify-around w-full ">
               <TabsTrigger
