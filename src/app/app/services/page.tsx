@@ -23,7 +23,7 @@ export default function Services() {
         <div className="pt-5 pb-4 flex flex-col gap-4 border-b border-secondary">
           <div className="text-sm relative flex items-center ">
             <Input
-              placeholder="Busque um cliente"
+              placeholder="Busque um servico"
               className="w-full placeholder:text-sm py-5 bg-secondary/50 border-none"
             />
             <Search className="absolute right-3 text-primary  w-5" />
