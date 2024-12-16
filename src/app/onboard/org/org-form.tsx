@@ -88,7 +88,7 @@ export default function OrgForm() {
                 control={control}
                 render={({ field }) => (
                   <Input
-                    className="placeholder: "
+                    className="placeholder:text-sm text-sm "
                     id="name"
                     placeholder="Nome da organização"
                     {...field}
@@ -106,7 +106,7 @@ export default function OrgForm() {
                 control={control}
                 render={({ field }) => (
                   <Input
-                    className="placeholder: "
+                    className="placeholder:text-sm text-sm "
                     id="email"
                     type="email"
                     placeholder="Email da organização"
@@ -125,7 +125,7 @@ export default function OrgForm() {
                   value={newMemberEmail}
                   type="email"
                   onChange={(e) => setNewMemberEmail(e.target.value)}
-                  className="placeholder: "
+                  className="placeholder:text-sm text-sm "
                   id="newMember"
                   placeholder="Email do novo membro"
                 />
