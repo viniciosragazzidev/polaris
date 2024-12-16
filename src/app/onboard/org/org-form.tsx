@@ -80,7 +80,7 @@ export default function OrgForm() {
       </div>
       <Card className="w-full max-w-md mx-auto  text-slate-100 border-none pt-4">
         <CardContent>
-          <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+          <form onSubmit={handleSubmit(onSubmit)} className="space-y-8 text-sm">
             <div className="space-y-2">
               <Label htmlFor="name">Nome da Organização</Label>
               <Controller
