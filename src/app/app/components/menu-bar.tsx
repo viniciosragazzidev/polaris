@@ -11,7 +11,7 @@ import { useRouter } from "next/navigation";
 const MenuBar = () => {
   const router = useRouter();
   return (
-    <nav className="flex w-full min-h-12 py-1 justify-center border-t px-4 fixed bottom-0  backdrop-blur-2xl bg-opacity-50">
+    <nav className="flex w-full min-h-12 py-1 justify-center border-t px-4 fixed bottom-0  z-[99] backdrop-blur-2xl bg-opacity-50">
       <ul className="flex w-full justify-around items-center max-w-sm">
         <li
           onClick={() => router.push("/app")}
