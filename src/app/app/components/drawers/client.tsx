@@ -22,7 +22,7 @@ export function ClientDrawer({
           Selecionar Cliente
         </Button>
       </DrawerTrigger>
-      <DrawerContent className="w-full h-[100vh]">
+      <DrawerContent className="w-full h-[90vh]">
         <DrawerTitle></DrawerTitle>
 
         <ClientsArea modeDrawer setCloseDrawer={setOpen} />

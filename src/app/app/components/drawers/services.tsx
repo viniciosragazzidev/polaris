@@ -22,7 +22,7 @@ export function ServiceDrawer({
           Selecionar Servico
         </Button>
       </DrawerTrigger>
-      <DrawerContent className="w-full h-[100vh]">
+      <DrawerContent className="w-full h-[90vh]">
         <DrawerTitle></DrawerTitle>
         <SevicesArea modeDrawer setCloseDrawer={setOpen} />
       </DrawerContent>
