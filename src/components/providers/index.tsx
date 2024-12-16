@@ -6,8 +6,7 @@ const IndexProvider = ({ children }: { children: React.ReactNode }) => {
     <>
       <ThemeProvider
         attribute="class"
-        defaultTheme="
-        dark"
+        defaultTheme="dark"
         disableTransitionOnChange
       >
         {/* <ModeToggle /> */}
