@@ -83,7 +83,7 @@ export default function UserForm() {
                 control={control}
                 render={({ field }) => (
                   <Input
-                    className="placeholder:text-sm "
+                    className="placeholder:text-sm text-sm "
                     id="firstName"
                     placeholder="Digite seu nome"
                     {...field}
@@ -103,7 +103,7 @@ export default function UserForm() {
                 control={control}
                 render={({ field }) => (
                   <Input
-                    className="placeholder:text-sm "
+                    className="placeholder:text-sm text-sm "
                     id="lastName"
                     placeholder="Digite seu sobrenome"
                     {...field}
@@ -123,7 +123,7 @@ export default function UserForm() {
                 control={control}
                 render={({ field }) => (
                   <Input
-                    className="placeholder:text-sm "
+                    className="placeholder:text-sm text-sm "
                     id="email"
                     type="email"
                     placeholder="Digite seu email"
@@ -171,7 +171,7 @@ export default function UserForm() {
             <div className="space-y-2">
               <Label htmlFor="profileImage">Imagem de Perfil</Label>
               <Input
-                className="placeholder:text-sm "
+                className="placeholder:text-sm text-sm "
                 id="profileImage"
                 type="file"
                 accept="image/*"
