@@ -49,31 +49,31 @@ export default function InitialItemsCards() {
     <div className="grid grid-cols-2 gap-4 pb-16">
       <InitialCardsNav
         title="Orçamentos"
-        href=""
+        href="/app/budgets"
         icon={<NotepadText className="h-5 w-5 text-primary" />}
         description="Suas ordens de serviços"
       />
       <InitialCardsNav
         title="Ordens de serviços"
-        href=""
+        href="/app/os"
         icon={<BriefcaseIcon className="h-5 w-5 text-primary" />}
         description="Suas OS's"
       />
       <InitialCardsNav
         title="Recibos"
-        href=""
+        href="/app/receipts"
         icon={<NotepadTextDashed className="h-5 w-5 text-primary" />}
         description="Recibos gerados pelo sistema."
       />
       <InitialCardsNav
         title="Agenda"
-        href=""
+        href="/app/schedule"
         icon={<Calendar className="h-5 w-5 text-primary" />}
         description="Seus eventos e compromissos"
       />
       <InitialCardsNav
         title="Tarefas"
-        href=""
+        href="/app/tasks"
         icon={<ListTodo className="h-5 w-5 text-primary" />}
         description="Lista de tarefas"
       />

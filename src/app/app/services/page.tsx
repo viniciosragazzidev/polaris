@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ArrowLeft, Bell, Search } from "lucide-react";
 
-export default function Invoices() {
+export default function Services() {
   return (
     <>
       <div className="flex justify-between py-4 bg-background w-full px-3">

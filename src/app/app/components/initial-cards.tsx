@@ -36,17 +36,17 @@ export default function InitialCards() {
         />
         <StatCard
           title="Meus Serviços"
-          href="/app/invoice"
+          href="/app/services"
           icon={<DollarSign className="h-5 w-5 text-primary" />}
         />
         <StatCard
           title="Meus Produtos"
-          href=""
+          href="/app/products"
           icon={<Wrench className="h-5 w-5 text-primary" />}
         />
         <StatCard
           title="Minhas Vendas"
-          href=""
+          href="/app/sales"
           icon={<ShoppingBag className="h-5 w-5 text-primary" />}
         />
       </div>
