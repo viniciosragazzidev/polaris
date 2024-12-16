@@ -61,7 +61,7 @@ export default function FormNewBudget() {
       <ClientDrawer open={openDrawerClient} setOpen={setOpenDrawerClient} />
       <ServiceDrawer open={openDrawerService} setOpen={setOpenDrawerService} />
       <ScrollArea className="w-sm h-[calc(100vh-100px)] whitespace-nowrap ">
-        <div className="w-full container px-4 pb-4">
+        <div className="w-full container px-4 py-4">
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-8 text-sm">
             <div className="space-y-2">
               <Label htmlFor="cliente">Cliente</Label>
