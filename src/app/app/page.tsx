@@ -1,3 +1,4 @@
+"use client";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { AspectRatio } from "@radix-ui/react-aspect-ratio";
 import { AlignLeft, Bell, Sparkle, UserPlus } from "lucide-react";

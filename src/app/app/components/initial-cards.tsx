@@ -31,12 +31,12 @@ export default function InitialCards() {
       <div className="flex gap-4 pb-4">
         <StatCard
           title="Clientes"
-          href="app/clients"
+          href="/app/clients"
           icon={<Phone className="h-5 w-5 text-primary" />}
         />
         <StatCard
           title="Meus Serviços"
-          href="app/invoice"
+          href="/app/invoice"
           icon={<DollarSign className="h-5 w-5 text-primary" />}
         />
         <StatCard

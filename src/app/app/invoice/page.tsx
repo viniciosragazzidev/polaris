@@ -1,3 +1,4 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ArrowLeft, Bell, Search } from "lucide-react";
@@ -6,7 +7,10 @@ export default function Invoices() {
   return (
     <>
       <div className="flex justify-between py-4 bg-background w-full px-3">
-        <span className="bg-primary/10 p-1 px-2 rounded-md">
+        <span
+          onClick={() => window.history.back()}
+          className="bg-primary/10 p-1 px-2 rounded-md"
+        >
           <ArrowLeft className="cursor-pointer w-5 text-primary " />
         </span>
 
