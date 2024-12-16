@@ -14,7 +14,7 @@ export default function Invoices() {
       </div>
       <main className="container mx-auto p-4">
         <header>
-          <h1 className="text-lg font-semibold">Meus Clientes</h1>
+          <h1 className="text-lg font-semibold">Meus Serviços</h1>
         </header>
         <div className="pt-5 pb-4 flex flex-col gap-4 border-b border-secondary">
           <div className="text-sm relative flex items-center ">
@@ -26,7 +26,7 @@ export default function Invoices() {
           </div>
 
           <Button variant="outline" className="text-sm py-5">
-            Adicionar novo cliente
+            Adicionar novo Serviço
           </Button>
         </div>
       </main>
