@@ -65,13 +65,13 @@ export default function FormNewBudget() {
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-8 text-sm">
             <div className="space-y-2">
               <Label htmlFor="cliente">Cliente</Label>
-              <Input
-                className="placeholder:text-sm text-sm cursor-pointer"
+
+              <Button
                 onClick={() => setOpenDrawerClient(true)}
-                id="cliente"
-                value={"Selecione o cliente"}
-                placeholder="Selecione o cliente"
-              />
+                variant={"zero"}
+              >
+                Selecione o cliente
+              </Button>
             </div>
 
             <div className="space-y-2">
@@ -92,14 +92,12 @@ export default function FormNewBudget() {
 
             <div className="space-y-2">
               <Label>Serviço</Label>
-
-              <Input
-                className="placeholder:text-sm text-sm cursor-pointer"
+              <Button
                 onClick={() => setOpenDrawerService(true)}
-                id="cliente"
-                value={"Selecione um ou mais serviços"}
-                placeholder="Selecione um ou mais serviços"
-              />
+                variant={"zero"}
+              >
+                Selecione um ou mais serviços
+              </Button>
             </div>
 
             <div className="space-y-2">
