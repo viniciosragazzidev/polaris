@@ -4,13 +4,15 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { Textarea } from "@/components/ui/textarea";
+import { ClientType } from "@/lib/types/app";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { Controller, useForm } from "react-hook-form";
 import * as z from "zod";
-import { ClientDrawer } from "../../components/drawers/client";
-import { ServiceDrawer } from "../../components/drawers/services";
+import ClientCardInfos from "../../components/cards/user-card-infos";
+import { GlobalDrawer } from "../../components/drawers/global";
 
 const formSchema = z.object({
   cliente: z.string().min(1, { message: "O cliente é obrigatório" }),
@@ -56,22 +58,43 @@ export default function FormNewBudget() {
   };
   const [openDrawerClient, setOpenDrawerClient] = useState(false);
   const [openDrawerService, setOpenDrawerService] = useState(false);
+  const [selectedClient, setSelectedClient] = useState<ClientType | null>();
   return (
     <>
-      <ClientDrawer open={openDrawerClient} setOpen={setOpenDrawerClient} />
-      <ServiceDrawer open={openDrawerService} setOpen={setOpenDrawerService} />
+      {/* <ClientDrawer
+        setSelectedClient={setSelectedClient}
+        open={openDrawerClient}
+        setOpen={setOpenDrawerClient}
+      />
+      <ServiceDrawer open={openDrawerService} setOpen={setOpenDrawerService} /> */}
+
+      <GlobalDrawer
+        open={openDrawerClient}
+        setOpen={setOpenDrawerClient}
+        mode="client"
+        setSelectedData={setSelectedClient}
+      />
       <ScrollArea className="w-sm h-[calc(100vh-100px)] whitespace-nowrap ">
-        <div className="w-full container px-4 py-4">
+        <div className="w-full container px-4 py-4 pb-32">
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-8 text-sm">
             <div className="space-y-2">
-              <Label htmlFor="cliente">Cliente</Label>
+              <Label>Cliente</Label>
 
-              <Button
-                onClick={() => setOpenDrawerClient(true)}
-                variant={"zero"}
-              >
-                Selecione o cliente
-              </Button>
+              {selectedClient ? (
+                <ClientCardInfos
+                  setOpenDrawerClient={setOpenDrawerClient}
+                  setSelectedClient={setSelectedClient}
+                  client={selectedClient}
+                />
+              ) : (
+                <Button
+                  type="button"
+                  onClick={() => setOpenDrawerClient(true)}
+                  variant={"zero"}
+                >
+                  Selecione o cliente
+                </Button>
+              )}
             </div>
 
             <div className="space-y-2">
@@ -95,6 +118,7 @@ export default function FormNewBudget() {
               <Button
                 onClick={() => setOpenDrawerService(true)}
                 variant={"zero"}
+                type="button"
               >
                 Selecione um ou mais serviços
               </Button>
@@ -118,7 +142,7 @@ export default function FormNewBudget() {
               />
             </div>
 
-            <h3 className="text-lg font-bold">Informações de Pagamento</h3>
+            <h3 className="text-base font-bold">Informações de Pagamento</h3>
 
             <div className="space-y-2">
               <Label htmlFor="total">Total</Label>
@@ -156,14 +180,16 @@ export default function FormNewBudget() {
                 name="validadeOrcamento"
                 control={control}
                 render={({ field }) => (
-                  <div className="flex items-center space-x-2">
+                  <div className="flex items-center space-x-5">
                     <Input
                       className="placeholder:text-sm text-sm "
                       id="validadeOrcamento"
-                      placeholder="Número de dias"
+                      placeholder="Ex.: 7"
                       {...field}
                     />
-                    <span>Dias</span>
+                    <span className="text-sm text-primary font-semibold">
+                      Dias
+                    </span>
                   </div>
                 )}
               />
@@ -180,8 +206,8 @@ export default function FormNewBudget() {
                 name="observacoes"
                 control={control}
                 render={({ field }) => (
-                  <Input
-                    className="placeholder:text-sm text-sm "
+                  <Textarea
+                    className="placeholder:text-sm text-sm h-32 "
                     placeholder="Adicione observações (opcional)"
                     {...field}
                   />

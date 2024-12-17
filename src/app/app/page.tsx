@@ -14,7 +14,7 @@ const App = () => {
 
         <Sparkle className="cursor-pointer w-6 text-primary" />
       </div>
-      <main className="w-full h-full mx-auto p-4 bg-[#071623]">
+      <main className="w-full h-full mx-auto p-4 bg-background">
         <div className=" container flex flex-col gap-5 md:justify-center md:items-center">
           <header className="flex w-full justify-between pb-4">
             <div className="flex items-center gap-3">
@@ -29,9 +29,7 @@ const App = () => {
                 <span className="text-sm text-muted-foreground/80">
                   Logado como
                 </span>
-                <p className="text-sm font-semibold text-primary">
-                  Vinicios Ragazzi
-                </p>
+                <p className="text-sm font-semibold ">Vinicios Ragazzi</p>
               </div>
             </div>
 

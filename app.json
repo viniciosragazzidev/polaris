@@ -1,0 +1,221 @@
+{
+  "account": [
+    {
+      "id": "1",
+      "name": "account1",
+      "email": "5KfMn@example.com",
+      "password": "password1"
+    }
+  ],
+  "clients": [
+    {
+      "id": "1",
+      "accountId": "1",
+      "name": "Vinicios Ragazzi",
+      "email": "5KfMn@example.com",
+      "phone": "(11) 99999-9999",
+      "document": "177.777.777-77",
+      "type": "fisica",
+      "createdAt": "2023-01-01T00:00:00.000Z",
+      "updatedAt": "2023-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "accountId": "1",
+      "name": "Maria Silva",
+      "email": "maria.silva@example.com",
+      "phone": "(21) 91234-5678",
+      "document": "188.888.888-88",
+      "type": "fisica",
+      "createdAt": "2023-02-01T00:00:00.000Z",
+      "updatedAt": "2023-02-01T00:00:00.000Z"
+    },
+    {
+      "id": "3",
+      "accountId": "1",
+      "name": "João Pereira",
+      "email": "joao.pereira@example.com",
+      "phone": "(31) 91111-2222",
+      "document": "199.999.999-99",
+      "type": "fisica",
+      "createdAt": "2023-03-01T00:00:00.000Z",
+      "updatedAt": "2023-03-01T00:00:00.000Z"
+    },
+    {
+      "id": "4",
+      "accountId": "1",
+      "name": "Ana Souza",
+      "email": "ana.souza@example.com",
+      "phone": "(41) 93333-4444",
+      "document": "211.111.111-11",
+      "type": "fisica",
+      "createdAt": "2023-04-01T00:00:00.000Z",
+      "updatedAt": "2023-04-01T00:00:00.000Z"
+    },
+    {
+      "id": "5",
+      "accountId": "1",
+      "name": "Carlos Santos",
+      "email": "carlos.santos@example.com",
+      "phone": "(51) 95555-6666",
+      "document": "222.222.222-22",
+      "type": "fisica",
+      "createdAt": "2023-05-01T00:00:00.000Z",
+      "updatedAt": "2023-05-01T00:00:00.000Z"
+    },
+    {
+      "id": "6",
+      "accountId": "1",
+      "name": "Paula Oliveira",
+      "email": "paula.oliveira@example.com",
+      "phone": "(61) 97777-8888",
+      "document": "233.333.333-33",
+      "type": "fisica",
+      "createdAt": "2023-06-01T00:00:00.000Z",
+      "updatedAt": "2023-06-01T00:00:00.000Z"
+    },
+    {
+      "id": "7",
+      "accountId": "1",
+      "name": "Pedro Costa",
+      "email": "pedro.costa@example.com",
+      "phone": "(71) 98888-9999",
+      "document": "244.444.444-44",
+      "type": "fisica",
+      "createdAt": "2023-07-01T00:00:00.000Z",
+      "updatedAt": "2023-07-01T00:00:00.000Z"
+    },
+    {
+      "id": "8",
+      "accountId": "1",
+      "name": "Fernanda Lima",
+      "email": "fernanda.lima@example.com",
+      "phone": "(81) 90000-1111",
+      "document": "255.555.555-55",
+      "type": "fisica",
+      "createdAt": "2023-08-01T00:00:00.000Z",
+      "updatedAt": "2023-08-01T00:00:00.000Z"
+    },
+    {
+      "id": "9",
+      "accountId": "1",
+      "name": "Lucas Almeida",
+      "email": "lucas.almeida@example.com",
+      "phone": "(91) 92222-3333",
+      "document": "266.666.666-66",
+      "type": "fisica",
+      "createdAt": "2023-09-01T00:00:00.000Z",
+      "updatedAt": "2023-09-01T00:00:00.000Z"
+    },
+    {
+      "id": "10",
+      "accountId": "1",
+      "name": "Juliana Rocha",
+      "email": "juliana.rocha@example.com",
+      "phone": "(31) 94444-5555",
+      "document": "277.777.777-77",
+      "type": "fisica",
+      "createdAt": "2023-10-01T00:00:00.000Z",
+      "updatedAt": "2023-10-01T00:00:00.000Z"
+    },
+    {
+      "id": "f6g4747",
+      "accountId": "1",
+      "name": "Vinicios Ragazzi",
+      "email": "viniciosragazzzi@gmail.com",
+      "phone": "21983373765",
+      "document": "1111222541545",
+      "type": "fisica",
+      "createdAt": "2024-12-17T21:55:03.767Z",
+      "updatedAt": "2024-12-17T21:55:03.767Z"
+    },
+    {
+      "id": "nkelhjw",
+      "accountId": "1",
+      "name": "Ana alice",
+      "email": "anaalice@gmail.com",
+      "phone": "21983373765",
+      "document": "1111222541545",
+      "type": "juridica",
+      "createdAt": "2024-12-17T21:55:40.810Z",
+      "updatedAt": "2024-12-17T21:55:40.810Z"
+    },
+    {
+      "id": "w3vnm2i",
+      "accountId": "1",
+      "name": "Bianca Soares",
+      "email": "lll@gmail.com",
+      "phone": "21999999",
+      "document": "1111222541545",
+      "type": "fisica",
+      "createdAt": "2024-12-17T21:57:27.042Z",
+      "updatedAt": "2024-12-17T21:57:27.042Z"
+    },
+    {
+      "id": "laq2pip",
+      "accountId": "1",
+      "name": "Bianca Soares",
+      "email": "lll@gmail.com",
+      "phone": "21999999",
+      "document": "1111222541545",
+      "type": "fisica",
+      "createdAt": "2024-12-17T21:58:08.683Z",
+      "updatedAt": "2024-12-17T21:58:08.683Z"
+    },
+    {
+      "id": "xfz50d8",
+      "accountId": "1",
+      "name": "Bianca Soares",
+      "email": "lll@gmail.com",
+      "phone": "21999999",
+      "document": "1111222541545",
+      "type": "fisica",
+      "createdAt": "2024-12-17T21:58:35.839Z",
+      "updatedAt": "2024-12-17T21:58:35.839Z"
+    },
+    {
+      "id": "t4vqisa",
+      "accountId": "1",
+      "name": "Bianca Soares",
+      "email": "lll@gmail.com",
+      "phone": "21999999",
+      "document": "1111222541545",
+      "type": "fisica",
+      "createdAt": "2024-12-17T21:58:42.457Z",
+      "updatedAt": "2024-12-17T21:58:42.457Z"
+    },
+    {
+      "id": "zvxwuaq",
+      "accountId": "1",
+      "name": "Bianca Soares",
+      "email": "lll@gmail.com",
+      "phone": "21999999",
+      "document": "1111222541545",
+      "type": "fisica",
+      "createdAt": "2024-12-17T22:01:14.238Z",
+      "updatedAt": "2024-12-17T22:01:14.238Z"
+    },
+    {
+      "id": "v9ns72d",
+      "accountId": "1",
+      "name": "Bianca Soares",
+      "email": "lll@gmail.com",
+      "phone": "21999999",
+      "document": "1111222541545",
+      "type": "fisica",
+      "createdAt": "2024-12-17T22:02:25.249Z",
+      "updatedAt": "2024-12-17T22:02:25.249Z"
+    },
+    {
+      "id": "q3c165k",
+      "accountId": "1",
+      "name": "Analice",
+      "email": "lll@gmail.com",
+      "phone": "21999999",
+      "document": "1111222541545",
+      "type": "fisica",
+      "createdAt": "2024-12-17T22:04:17.393Z",
+      "updatedAt": "2024-12-17T22:04:17.393Z"
+    }
+  ]
+}

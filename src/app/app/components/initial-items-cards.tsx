@@ -35,7 +35,9 @@ const InitialCardsNav: React.FC<InitialCardsNavProps> = ({
           {" "}
           {icon}
         </span>
-        <CardTitle className=" font-medium text-sm">{title}</CardTitle>
+        <CardTitle className=" font-medium text-sm text-slate-200">
+          {title}
+        </CardTitle>
         <CardDescription className="text-xs text-muted-foreground line-clamp-2">
           {description}
         </CardDescription>

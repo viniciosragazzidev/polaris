@@ -7,23 +7,26 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { ClientType } from "@/lib/types/app";
 import ClientsArea from "../../clients/clients-area";
+import SevicesArea from "../../services/services-area";
 
-export function ClientDrawer({
-  open,
-  setOpen,
-  setSelectedClient,
-}: {
+interface GlobalDrawerProps {
   open: boolean;
   setOpen: (open: boolean) => void;
-  setSelectedClient: (client: ClientType) => void;
-}) {
+  setSelectedData?: (data: unknown) => void;
+  mode?: "client" | "service" | "newClient" | "newService";
+}
+export function GlobalDrawer({
+  open,
+  setOpen,
+  setSelectedData,
+  mode,
+}: GlobalDrawerProps) {
   return (
     <Drawer open={open} onOpenChange={setOpen}>
       <DrawerTrigger asChild>
         <Button className="hidden" variant="outline">
-          Selecionar Cliente
+          Selecionar
         </Button>
       </DrawerTrigger>
       <DrawerContent className="w-full h-[90vh]">
@@ -32,11 +35,15 @@ export function ClientDrawer({
         <ScrollArea className="w-full h-full ">
           {" "}
           <div className="pb-10">
-            <ClientsArea
-              modeDrawer={true}
-              setCloseDrawer={setOpen}
-              setSelectedClient={setSelectedClient}
-            />
+            {mode === "client" ? (
+              <ClientsArea
+                modeDrawer={true}
+                setCloseDrawer={setOpen}
+                setSelectedClient={setSelectedData}
+              />
+            ) : (
+              <SevicesArea modeDrawer setCloseDrawer={setOpen} />
+            )}
           </div>
         </ScrollArea>
       </DrawerContent>

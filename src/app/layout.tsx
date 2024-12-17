@@ -1,4 +1,5 @@
 import IndexProvider from "@/components/providers";
+import QueryProvider from "@/components/providers/queryProvider";
 import type { Metadata } from "next";
 import { Onest } from "next/font/google";
 import "./globals.css";
@@ -19,11 +20,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" suppressHydrationWarning>
+    <html lang="pt-BR" suppressHydrationWarning={true}>
       <body
-        className={` ${onest.className} bg-slate-50 dark:bg-background   antialiased`}
+        className={` ${onest.className} bg-slate-50 text-slate-200 dark:bg-background   antialiased`}
       >
-        <IndexProvider>{children}</IndexProvider>
+        <QueryProvider>
+          <IndexProvider>{children}</IndexProvider>
+        </QueryProvider>
       </body>
     </html>
   );

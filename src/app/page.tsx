@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="flex h-screen flex-col items-center justify-center p-2 bg-slate-100">
-      <div className="container relative  bg-[#071623] w-full h-full rounded-lg flex flex-col justify-center items-center">
+      <div className="container relative  bg-background w-full h-full rounded-lg flex flex-col justify-center items-center">
         <div className="logo flex flex-col gap-2 mb-10 justify-center items-center">
           <Sparkle className="h-10 w-10 text-primary" />
           <h1 className="text-4xl text-white font-black tracking-widest uppercase">
